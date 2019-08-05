@@ -1,0 +1,45 @@
+.banner{
+    position: relative;
+    color: #ffffff;
+   .container{
+        position: absolute;
+        top: 147px;
+        left: 353px;
+   }
+   &__title{
+        width: 472px;
+        letter-spacing: -0.9px;
+        margin-bottom: 30px;
+        color: #ffffff;
+   }
+   &__text{
+        font-size: 19px;
+        font-weight: 100;
+        font-family: $font-text-two;
+        width: 417px;
+        letter-spacing: 0.15px;
+   }
+   &__button{
+        margin: 15px 0px 0 3px;
+        @extend .button;
+        @extend .button--normal;
+
+   }
+   .banner__circles{
+    position: absolute;
+    left: 352px;
+    bottom: 38px;
+        &--entity{
+            width: 7px;
+            height: 7px;
+            opacity: 0.5;
+            background-color: #ffffff;
+            display: inline-block;
+            margin-right: 3.5px;
+            border-radius: 5px;
+            &.active{             
+                opacity: 1;
+            }
+        }  
+   }
+}

@@ -1,0 +1,31 @@
+.footer{
+    text-align:center;
+    padding: 60px 0 117px;
+    .container{
+        width: $winth-container+100;
+    }
+    &__item{
+        @include items(30%);
+        &--title{
+            @extend .paragraf--title;
+            font-size: 10px;
+            margin-bottom: 9px;
+        }
+        &--text-two{
+            @extend .paragraf--text-two;
+            font-size: 13.5px;
+            margin: 0;
+            line-height: 1.8;
+        }
+        &--icon{
+            a{
+                color: #000;
+                margin: 10px;
+                .fa:hover{
+                    color:$color-two;
+                }
+            }
+           
+        }
+    }
+}

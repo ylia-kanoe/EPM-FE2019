@@ -1,0 +1,58 @@
+.team{
+    padding: 39px 0 75px 0;
+    &__title2{
+        letter-spacing: -0.6px;
+    }
+    &__people{
+        width: 780px;
+        margin: 0 auto;
+        display: table;
+        padding-top: 15px;
+    }
+    &__item{
+        @include items(33.3%);
+        text-align: center;
+        margin-bottom: 45px;
+        position: relative;
+        &--img{
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 44px;
+            width: 172px;
+            height: 172px;
+            border-radius: 100px;
+            background-color: rgba(98, 73, 124,0.7);
+        }
+        &:hover .team__item--img{
+            display: block;
+            & a:hover i{
+                color: $color-one;
+            }
+        }
+        img{
+            border-radius: 100px;  
+        }
+        &--refer {
+            padding: 67px 0;
+            i {
+                color: #fff;
+                width: 53px;
+            }
+        }
+        &--title{
+            @extend .paragraf--title;
+            margin-bottom: 0;
+            line-height: 2.4;
+        }
+        &--text{
+            @extend .paragraf--text-one;
+            color: rgba(4, 4, 5, 0.6);
+            font-family: Montserrat;
+            font-size: 14.5px;
+            opacity: 0.39;
+            font-weight: 700;
+            margin-top: 0;
+        }
+    }
+}

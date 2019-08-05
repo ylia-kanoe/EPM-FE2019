@@ -1,0 +1,97 @@
+@import 'variables';
+@import 'mixins';
+
+*{
+    font-family: $font-stack;
+}
+body{
+    width: $width-body;
+    margin: 0 auto;
+}
+.container{
+    width: $winth-container;
+    margin: 0 auto;
+}
+h1{
+    font-size: 40.5px;
+    font-weight: bold;
+}
+h2{
+    font-size: 44px;
+    font-weight: bold;
+    line-height: 0.92;
+    text-align: center;
+}
+/* Стилизация текста */
+.paragraf--title{
+    font-size: 14.5px;
+    font-weight: bold;
+    line-height: 2.79;
+    text-align: center;
+    text-transform: $text-transform;
+}
+.paragraf--text-one{
+    opacity: 0.5;
+    font-family: $font-text-one;
+    font-size: 13.5px;
+    line-height: 1.74;
+    text-align: center;
+    color: rgba(4, 4, 5, 0.5);
+}
+.paragraf--text-two{
+    font-family: $font-text-one;
+    font-size: 10.5px;
+    line-height: 1.9;
+    text-align: center;
+    color: #040405;  
+}
+/* Стилизация кнопок */
+.button{
+    background-color: $bgcolor;
+    border: none;
+    border-radius: $button-border-radius;
+    font-size: $button-font-size;
+    font-weight: $button-font-weight;
+    line-height: 0.67;
+    color: $color;
+    text-transform: $text-transform;
+    &:hover{
+        background-color: $bgcolor-hover;
+        color: $color-hover;
+        cursor: pointer;
+    }
+    &--extra-largest{
+        @include sizes(311px,44px);
+    }
+    &--largest{
+        @include sizes(162px,43px);
+    }
+    &--big {
+        @include sizes(132px,55px);
+    }
+    &--normal {
+        @include sizes(125px,43px);
+    }
+    &--small {
+        @include sizes(82px,28px);
+    }
+}
+input:focus, textarea:focus  {
+    outline-color: orange;
+} 
+button:focus, a:focus {
+    outline-color: $bgcolor-hover;
+} 
+
+@import 'header';
+@import 'banner';
+@import 'welcome';
+@import 'project';
+@import 'pricing';
+@import 'video';
+@import 'team';
+@import 'life';
+@import 'newsletter';
+@import 'blog';
+@import 'contact';
+@import 'footer';

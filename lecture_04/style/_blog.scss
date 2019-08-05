@@ -1,0 +1,39 @@
+.blog {
+    padding: 33px 0 87px 0;
+    .container{
+        display: flex;
+        padding-top: 23px;
+    }
+    &__item{
+        float: left;
+        width: 33%;
+        text-align: center;
+        &--title{
+            @extend .paragraf--title;
+            line-height: 1.2;
+            margin-top: 32px;
+            padding: 0 20px;
+        }
+        &--text-one{
+            @extend .paragraf--text-one;
+            font-weight: 600;
+        }
+        &--text-two{
+            @extend .paragraf--text-two;
+            font-size: 13.5px;
+            font-weight: 500;
+            line-height: 1.8;
+        }
+        &--button{
+            @extend .button;
+            @extend .button--normal;
+            background-color:#ececec;
+            color: #323232;
+            margin-top: 12px;
+            &:hover{
+                color: #323232;
+                background-color: $color-one;
+            }
+        }
+    }
+}
