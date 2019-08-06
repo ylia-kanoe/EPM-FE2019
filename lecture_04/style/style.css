@@ -29,7 +29,7 @@ h2 {
 }
 
 /* Стилизация текста */
-.paragraf--title, .welcome__item--title, .project__item--title, .pricing__table--title th, .video__slider--title, .team__item--title, .blog__item--title, .footer__item--title {
+.paragraf--title, .welcome__item--title, .project__item--title, .pricing__table--title th, .video__item--title, .team__item--title, .blog__item--title, .footer__item--title {
   font-size: 14.5px;
   font-weight: bold;
   line-height: 2.79;
@@ -395,32 +395,6 @@ header nav .nav-menu li a.active {
   padding-top: 10px;
 }
 
-.video__slider--img {
-  position: relative;
-}
-
-.video__slider--img::after {
-  content: '';
-  background-image: url(../image/play-icon.png);
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: 1;
-  background-position: center center;
-  background-repeat: no-repeat;
-  left: 0;
-}
-
-.video__slider--title {
-  color: #fefefe;
-  font-size: 10.5px;
-  text-align: left;
-}
-
-.video__slider--title time {
-  float: right;
-}
-
 .video__item {
   float: left;
   margin-right: 37px;
@@ -433,6 +407,36 @@ header nav .nav-menu li a.active {
 
 .video__item:last-child {
   width: 630px;
+}
+
+.video__item--img {
+  position: relative;
+}
+
+.video__item--img::after {
+  content: '';
+  background-image: url(../image/play-icon.png);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  background-position: center center;
+  background-repeat: no-repeat;
+  left: 0;
+}
+
+.video__item--title {
+  color: #fefefe;
+  font-size: 10.5px;
+  text-align: left;
+}
+
+.video__item--title time {
+  float: right;
+}
+
+.video__item:hover .video__item--img::after {
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .team {

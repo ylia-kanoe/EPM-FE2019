@@ -9,7 +9,17 @@
     &__slider {
         width: 5000px;
         padding-top: 10px;
-       
+    }
+    &__item {
+        float: left;
+        margin-right: 37px;
+        &:first-child {
+            left: -42px;
+            margin-left: -375px;
+        }
+        &:last-child{
+            width: 630px;
+        }
         &--img{
             position: relative;
             &::after{
@@ -33,16 +43,8 @@
                 float: right;
             }
        }
-    }
-    &__item {
-        float: left;
-        margin-right: 37px;
-        &:first-child {
-            left: -42px;
-            margin-left: -375px;
-        }
-        &:last-child{
-            width: 630px;
-        }
+       &:hover &--img::after{
+            background-color: rgba(0, 0, 0, 0.4);
+       }
     }
 }
