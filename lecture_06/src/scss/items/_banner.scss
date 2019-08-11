@@ -1,0 +1,79 @@
+.banner{
+     background-image: url(../image/image.png);
+     color: #fff;
+     display: flex;
+     flex-direction: column;
+     align-content: center;
+     justify-content: space-between;
+     height: 691px;
+     .container{
+          margin-top: 147px;
+     }
+     &__title{
+          font-size: 40.5px;
+          font-weight: bold;
+          width: 472px;
+          letter-spacing: -0.9px;
+          margin-bottom: 30px;
+          color: #ffffff;      
+          transform: translate(200px);  
+          opacity: 0;
+          transition: all 4s ease;
+     }
+     &__text{
+          font-size: 19px;
+          font-weight: 100;
+          font-family: $font-text-two;
+          width: 417px;
+          letter-spacing: 0.15px;
+          transform: translate(-70px);
+          transition: all 4s ease;
+          opacity: 0;
+     }
+     &__button{
+          margin: 15px 0px 0 3px;
+          @extend .button;
+          @extend .button--normal;
+          transform: translateY(50px);
+          transition: transform 4s ease, opacity 4s ease, background-color 0.4s;
+          opacity: 0;
+     }
+     .banner__circles{
+          margin-top: 60px;
+          margin-bottom: 30px;
+          &--entity{
+               width: 7px;
+               height: 7px;
+               opacity: 0.5;
+               background-color: #ffffff;
+               display: inline-block;
+               cursor: pointer;
+               margin-left: 3.5px;
+               border-radius: 5px;
+               transition: .4s;
+               &.active{             
+                    opacity: 1;
+               }
+               &:hover {
+                    transform: scale(1.5);
+                    opacity: 1;
+               }
+          }  
+     }
+     &:hover &__title{
+          transform: translate(0px);
+          transition: all 2s ease;  
+          opacity: 1;
+     }
+     &:hover &__text{
+          transform: translate(0px);
+          transition: all 3s ease;   
+          opacity: 1;
+     }
+     &:hover &__button{
+          transform: translateY(0px); 
+          transition: transform 2s ease, opacity 2s ease, background-color 0.4s;
+          opacity: 1;
+     }
+
+}

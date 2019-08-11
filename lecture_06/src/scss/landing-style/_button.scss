@@ -1,0 +1,32 @@
+/* Стилизация кнопок */
+.button{
+    background-color: $bgcolor;
+    border: none;
+    border-radius: $button-border-radius;
+    font-size: $button-font-size;
+    font-weight: $button-font-weight;
+    line-height: 0.67;
+    color: $color;
+    text-transform: $text-transform;
+    transition: .4s;
+    &:hover{
+        background-color: $bgcolor-hover;
+        color: $color-hover;
+        cursor: pointer;
+    }
+    &--extra-largest{
+        @include sizes(311px,44px);
+    }
+    &--largest{
+        @include sizes(162px,43px);
+    }
+    &--big {
+        @include sizes(132px,55px);
+    }
+    &--normal {
+        @include sizes(125px,43px);
+    }
+    &--small {
+        @include sizes(82px,28px);
+    }
+}

@@ -1,0 +1,38 @@
+.contact{
+    background-color: $bgcolor;   
+    display: flex;
+    &__info{
+        &--form{
+            margin-left: 43px;
+            label{
+                display: block;
+                font-size: 10.5px;
+                font-weight:  800;
+                line-height: 0.67;
+                text-transform:$text-transform;
+                color: #323232;
+                margin-bottom: 12px;
+            }
+            input, textarea{        
+                width: 289px;
+                border: none;
+                margin-bottom: 23px;
+                padding: 10px;
+                font-size: 19px;
+            }
+        }
+    }
+    &__title2{
+        text-align: left;
+        margin-left: 45px;
+        margin-bottom: 28px;
+        margin-top: 40px;
+    }
+    &__button{
+        @extend .button;
+        @extend .button--extra-largest;
+        display: block;
+        background-color: $color-two;
+        color:#fefefe;  
+    }
+}
