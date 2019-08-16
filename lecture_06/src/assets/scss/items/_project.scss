@@ -1,0 +1,38 @@
+.projects__wrapper{
+    @include  items-flex(row, space-between, baseline);
+    padding: 40px 0 0 0;
+
+    &--item{
+        background-color: #efefef;
+        width: 25%;
+
+        &:nth-child(2n+1) {
+            background-color: #e4e4e4;
+        }
+
+        &:hover {
+            background-color: $bgcolor;
+            cursor: pointer;
+            transition: 0.4s;
+        }
+    }
+    &--info{
+        text-align: left;
+        padding: 40px 20px 45px 45px;
+    }
+
+    &--title{
+            text-align: left;
+            margin: 0;
+            padding: 0;
+            line-height: 1.2;
+    }
+    &--text{
+        text-align: left;
+        padding: 8px 0 12px 0;
+    }
+        
+    &--button{
+        background-color: #fefefe;
+        }
+}

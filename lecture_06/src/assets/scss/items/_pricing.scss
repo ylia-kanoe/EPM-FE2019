@@ -1,0 +1,55 @@
+.pricing__wrapper{
+    @include  items-flex(row, space-between, baseline);
+    padding: 50px 0 90px 0;
+
+    &--item{
+        text-align: center;
+        border-spacing:0;
+        border-right: 1px solid;
+        border-right-color: black;
+        perspective: 300px;
+        width: 33%;
+
+        &:nth-child(3) {
+            border: none;
+        }
+    }
+
+    &--container {
+        display: inline-block;
+        width: 100%;
+    }
+   
+    &--list{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    &--title{
+        line-height: 1;
+        padding-bottom: 15px;
+    }
+
+    &--text-one{
+        letter-spacing: 1px;
+        font-family: Montserrat;
+        opacity: 1;
+        font-weight: 500;
+        padding-bottom: 10px;
+    }
+
+    &--text-two{
+        line-height: normal;
+        padding: 5px 0;
+    }
+
+    &--button{
+        margin-top: 17px;
+            
+    }
+}
+
+
+
+    

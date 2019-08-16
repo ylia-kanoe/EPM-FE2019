@@ -4,349 +4,402 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         <meta charset="utf-8">
         <title>Zippy mockup - Zeplin</title>
-        <link rel="shortcut icon" href="image/title-icon.png" type="image/png">
-
+        <link rel="shortcut icon" href="assets/image/title-icon.png" type="image/png">
+        <link rel="stylesheet" href="index.css">    
     <link href="main.css" rel="stylesheet"></head>
     <body>
-        <header>
+        <header class="header">
             <div class="container">
-                <div class="logo">
-                    <a href="/">ZIPPY</a>
+                <div class="header__logo">
+                    <a class="header__logo--refer" href="/">ZIPPY</a>
                 </div>
-                <nav>
-                    <ul class="nav-menu">
-                        <li><a class="active" href="#">Home</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#pricing">Pricing</a></li>
-                        <li><a href="#team">Team</a></li>
-                        <li><a href="#blog">Blog</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                <div class="header__menu">
+                <nav class="header__menu--nav">
+                    <ul class="header__menu--list">
+                        <li class="header__menu--unit"><a class="header__menu--refer active" href="#">Home</a></li>
+                        <li class="header__menu--unit"><a class="header__menu--refer" href="#projects">Projects</a></li>
+                        <li class="header__menu--unit"><a class="header__menu--refer" href="#pricing">Pricing</a></li>
+                        <li class="header__menu--unit"><a class="header__menu--refer" href="#team">Team</a></li>
+                        <li class="header__menu--unit"><a class="header__menu--refer" href="#blog">Blog</a></li>
+                        <li class="header__menu--unit"><a class="header__menu--refer" href="#contact">Contact</a></li>
                     </ul>
                 </nav>
+            </div>
             </div>
         </header>
         <main>
             <section class="banner">
-               
                 <div class="container">
-                    <h3 class="banner__title">One page promising to fill all your needs!</h3> 
-                    <p class="banner__text">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
-                    <button class="banner__button">Learn more</button>
-                </div>
-                <div class="container">
-                <div class="banner__circles">
-                    <div class="banner__circles--entity"></div>
-                    <div class="banner__circles--entity active"></div>
-                    <div class="banner__circles--entity"></div>
-                    <div class="banner__circles--entity"></div>
-                </div>
+                    <div class="banner__info">
+                        <h3 class="banner__info--title">One page promising to fill all your needs!</h3> 
+                        <p class="paragraf banner__info--text">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
+                        <button class="button button--normal banner__info--button">Learn more</button>
+                    </div>
+                    <div class="banner__circles">
+                        <div class="banner__circles--wrapper">
+                            <div class="banner__circles--entity"></div>
+                            <div class="banner__circles--entity active"></div>
+                            <div class="banner__circles--entity"></div>
+                            <div class="banner__circles--entity"></div>
+                        </div>
+                    </div>
                 </div>
             </section>
-            <section class="welcome"> 
-                <h1 class="welcome__title">Welcome to Zippy</h1>
+            <section class="section welcome"> 
+                <h1 class="section-title">Welcome to Zippy</h1>
                 <div class="container">
-                    <div class="item--display">
-                        <p class="welcome__text">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean 
+                    <div class="welcome__info">
+                        <p class="paragraf welcome__info--text">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean 
                         sol&shy;licitudin, lorem quis bibendum auctor.</p>
-                        <img class="welcome__image" src="image/umbrella-icon.png" alt="umbrella-icon">
+                        <img class="welcome__info--image" src="assets/image/umbrella-icon.png" alt="umbrella-icon">
                     </div>
-                    <div class="item--display">
-                        <div class="welcome__item">
-                            <div class="welcome__circle"><img src="image/bell-icon.png" alt="bell-icon"></div>
-                            <p class="welcome__item--title">Lorem ipsum</p>
-                            <p class="welcome__item--text">Lorem ipsum dolor sit anet, consectetur adipiscing elit. Pellentesque vel odio vel fellis placerat pharetra ut vitae felis.</p>
-                            <button class="welcome__item--button">Learn more</button>
+                    <div class="welcome__wrapper">
+                        <div class="welcome__wrapper--item">
+                            <div class="card--img welcome__wrapper--img"><img src="assets/image/bell-icon.png" alt="bell-icon"></div>
+                            <div class="card--info welcome__wrapper--info">
+                                <p class="paragraf paragraf--title welcome__wrapper--title">Lorem ipsum</p>
+                                <p class="paragraf paragraf--text-one welcome__wrapper--text">Lorem ipsum dolor sit anet, consectetur adipiscing elit. Pellentesque vel odio vel fellis placerat pharetra ut vitae felis.</p>
+                                <button class="button button--normal welcome__wrapper--button">Learn more</button>
+                            </div>
                         </div>
-                        <div class="welcome__item">
-                            <div class="welcome__circle"><img src="image/envelop-icon.png" alt="envelop-icon"></div>
-                            <p class="welcome__item--title">Dolor sit</p>
-                            <p class="welcome__item--text">Lorem ipsum dolor sit anet, consectetur adipiscing elit. Pellentesque vel odio vel fellis placerat pharetra ut vitae felis.</p>
-                            <button class="welcome__item--button">Learn more</button>
+                        <div class="welcome__wrapper--item">
+                            <div class="card--img welcome__wrapper--img"><img src="assets/image/envelop-icon.png" alt="envelop-icon"></div>
+                            <div class="card--info welcome__wrapper--info">
+                                <p class="paragraf paragraf--title welcome__wrapper--title">Dolor sit</p>
+                                <p class="paragraf paragraf--text-one welcome__wrapper--text">Lorem ipsum dolor sit anet, consectetur adipiscing elit. Pellentesque vel odio vel fellis placerat pharetra ut vitae felis.</p>
+                                <button class="button button--normal welcome__wrapper--button">Learn more</button>
+                            </div>
                         </div>
-                        <div class="welcome__item">
-                            <div class="welcome__circle"><img src="image/drawer-icon.png" alt="drawer-icon"></div>
-                            <p class="welcome__item--title">Consecteture</p>
-                            <p class="welcome__item--text">Lorem ipsum dolor sit anet, consectetur adipiscing elit. Pellentesque vel odio vel fellis placerat pharetra ut vitae felis.</p>
-                            <button class="welcome__item--button">Learn more</button>
+                        <div class="welcome__wrapper--item">
+                            <div class="card--img welcome__wrapper--img"><img src="assets/image/drawer-icon.png" alt="drawer-icon"></div>
+                            <div class="card--info welcome__wrapper--info">
+                                <p class="paragraf paragraf--title welcome__wrapper--title">Consecteture</p>
+                                <p class="paragraf paragraf--text-one welcome__wrapper--text">Lorem ipsum dolor sit anet, consectetur adipiscing elit. Pellentesque vel odio vel fellis placerat pharetra ut vitae felis.</p>
+                                <button class="button button--normal welcome__wrapper--button">Learn more</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section id="projects" class="project">
-                <h2 class="project__title2">Projects</h2>
-                <div class="item--display">
-                <div class="project__item">
-                    <img src="image/image_6.png" alt="image_6">
-                    <div class="project__info">
-                        <p class="project__item--title">Project name</p>
-                        <p class="project__item--text">Lorem ipsum dolor sit anet, consectetur adipiscing elit. Pellentesque vel odio vel fellis placerat pharetra ut vitae felis.</p>
-                        <button class="project__item--button">Launch case studio</button>
+            <section id="projects" class="section project">
+                <h2 class="section-title">Projects</h2>
+                <div class="projects__wrapper">
+                    <div class="projects__wrapper--item">
+                    <div class="card--img"><img src="assets/image/image_6.png" alt="image_6"></div>
+                    <div class="card--info projects__wrapper--info">
+                        <p class="paragraf paragraf--title projects__wrapper--title">Project name</p>
+                        <p class="paragraf paragraf--text-one projects__wrapper--text">Lorem ipsum dolor sit anet, consectetur adipiscing elit. Pellentesque vel odio vel fellis placerat pharetra ut vitae felis.</p>
+                        <button class="button button--largest projects__wrapper--button">Launch case studio</button>
                     </div>
                 </div>
-                <div class="project__item">
-                    <img src="image/image_5.png" alt="image_5">
-                    <div class="project__info">
-                        <p class="project__item--title">Project name</p>
-                        <p class="project__item--text">Lorem ipsum dolor sit anet, consectetur adipiscing elit. Pellentesque vel odio vel fellis placerat pharetra ut vitae felis.</p>
-                        <button class="project__item--button">Launch case studio</button>
+                <div class="projects__wrapper--item">
+                        <div class="card--img"><img src="assets/image/image_5.png" alt="image_5"></div>
+                    <div class="card--info projects__wrapper--info">
+                        <p class="paragraf paragraf--title projects__wrapper--title">Project name</p>
+                        <p class="paragraf paragraf--text-one projects__wrapper--text">Lorem ipsum dolor sit anet, consectetur adipiscing elit. Pellentesque vel odio vel fellis placerat pharetra ut vitae felis.</p>
+                        <button class="button button--largest projects__wrapper--button">Launch case studio</button>
                     </div>
                 </div>
-                <div class="project__item">
-                    <img src="image/image_4.png" alt="image_4">
-                    <div class="project__info">
-                        <p class="project__item--title">Project name</p>
-                        <p class="project__item--text">Lorem ipsum dolor sit anet, consectetur adipiscing elit. Pellentesque vel odio vel fellis placerat pharetra ut vitae felis.</p>
-                        <button class="project__item--button">Launch case studio</button>
+                <div class="projects__wrapper--item">
+                        <div class="card--img"><img src="assets/image/image_4.png" alt="image_4"></div>
+                    <div class="card--info projects__wrapper--info">
+                        <p class="paragraf paragraf--title projects__wrapper--title">Project name</p>
+                        <p class="paragraf paragraf--text-one projects__wrapper--text">Lorem ipsum dolor sit anet, consectetur adipiscing elit. Pellentesque vel odio vel fellis placerat pharetra ut vitae felis.</p>
+                        <button class="button button--largest projects__wrapper--button">Launch case studio</button>
                     </div>
                 </div>
-                <div class="project__item">
-                    <img src="image/image_7.png" alt="image_7">
-                    <div class="project__info">
-                        <p class="project__item--title">Project name</p>
-                        <p class="project__item--text">Lorem ipsum dolor sit anet, consectetur adipiscing elit. Pellentesque vel odio vel fellis placerat pharetra ut vitae felis.</p>
-                        <button class="project__item--button">Launch case studio</button>
+                <div class="projects__wrapper--item">
+                        <div class="card--img"><img src="assets/image/image_7.png" alt="image_7"></div>
+                    <div class="card--info projects__wrapper--info">
+                        <p class="paragraf paragraf--title projects__wrapper--title">Project name</p>
+                        <p class="paragraf paragraf--text-one projects__wrapper--text">Lorem ipsum dolor sit anet, consectetur adipiscing elit. Pellentesque vel odio vel fellis placerat pharetra ut vitae felis.</p>
+                        <button class="button button--largest projects__wrapper--button">Launch case studio</button>
                     </div>
                 </div>
                 </div>
             </section>
-            <section id="pricing" class="pricing">
-                <h2 class="pricing__title2">Pricing Table</h2>
+            <section id="pricing" class="section pricing">
+                <h2 class="section-title">Pricing Table</h2>
                 <div class="container">
-                    <div class="item--display">
-                        <div class="pricing__item">
-                            <div class="pricing__item--container">
-                                <p class="pricing__item--title">Standart plan</p>
-                                <ul>
-                                    <li><p class="pricing__item--text-one">Free</p></li>
-                                    <li><p class="pricing__item--text-two">2 GB Available</p></li>
-                                    <li><p class="pricing__item--text-two">30 max. contacts</p></li>
-                                    <li><p class="pricing__item--text-two">30 Messages/mounth</p></li>
-                                    <li><p class="pricing__item--text-two">Disgusting Ads</p></li>
+                    <div class="pricing__wrapper">
+                        <div class="pricing__wrapper--item">
+                            <div class="pricing__wrapper--container">
+                                <p class="paragraf paragraf--title pricing__wrapper--title">Standart plan</p>
+                                <ul class="pricing__wrapper--list">
+                                    <li class="pricing__wrapper--unit"><p class="paragraf paragraf--text-one pricing__wrapper--text-one">Free</p></li>
+                                    <li class="pricing__wrapper--unit"><p class="paragraf paragraf--text-two pricing__wrapper--text-two">2 GB Available</p></li>
+                                    <li class="pricing__wrapper--unit"><p class="paragraf paragraf--text-two pricing__wrapper--text-two">30 max. contacts</p></li>
+                                    <li class="pricing__wrapper--unit"><p class="paragraf paragraf--text-two pricing__wrapper--text-two">30 Messages/mounth</p></li>
+                                    <li class="pricing__wrapper--unit"><p class="paragraf paragraf--text-two pricing__wrapper--text-two">Disgusting Ads</p></li>
                                 </ul>
-                                <button class="pricing__item--button">Buy</button>
+                                <button class="button button--small pricing__wrapper--button">Buy</button>
                             </div>
                         </div>
-                        <div class="pricing__item">
-                            <div class="pricing__item--container">
-                                <p class="pricing__item--title">Business plan</p> 
-                                <ul>
-                                    <li><p class="pricing__item--text-one">19$/MONTH</p></li>
-                                    <li><p class="pricing__item--text-two">10 GB Available</p></li>
-                                    <li><p class="pricing__item--text-two">75 max. contacts</p></li>
-                                    <li><p class="pricing__item--text-two">120 Messages/mounth</p></li>
-                                    <li><p class="pricing__item--text-two">Ads Free</p></li>
+                        <div class="pricing__wrapper--item">
+                            <div class="pricing__wrapper--container">
+                                <p class="paragraf paragraf--title pricing__wrapper--title">Business plan</p> 
+                                <ul class="pricing__wrapper--list">
+                                    <li class="pricing__wrapper--unit"><p class="paragraf paragraf--text-one pricing__wrapper--text-one">19$/MONTH</p></li>
+                                    <li class="pricing__wrapper--unit"><p class="paragraf paragraf--text-two pricing__wrapper--text-two">10 GB Available</p></li>
+                                    <li class="pricing__wrapper--unit"><p class="paragraf paragraf--text-two pricing__wrapper--text-two">75 max. contacts</p></li>
+                                    <li class="pricing__wrapper--unit"><p class="paragraf paragraf--text-two pricing__wrapper--text-two">120 Messages/mounth</p></li>
+                                    <li class="pricing__wrapper--unit"><p class="paragraf paragraf--text-two pricing__wrapper--text-two">Ads Free</p></li>
                                 </ul>                            
-                                <button class="pricing__item--button">Buy</button>
+                                <button class="button button--small pricing__wrapper--button">Buy</button>
                             </div>
                         </div>
-                        <div class="pricing__item">
-                            <div class="pricing__item--container">
-                                <p class="pricing__item--title">Premium plan</p>
-                                <ul>
-                                    <li><p class="pricing__item--text-one">14$/MONTH</p></li>
-                                    <li><p class="pricing__item--text-two">100 GB Available</p></li>
-                                    <li><p class="pricing__item--text-two">Unlimited contacts</p></li>
-                                    <li><p class="pricing__item--text-two">Unlimited Messages/mounth</p></li>
-                                    <li><p class="pricing__item--text-two">Ads Free</p></li>
+                        <div class="pricing__wrapper--item">
+                            <div class="pricing__wrapper--container">
+                                <p class="paragraf paragraf--title pricing__wrapper--title">Premium plan</p>
+                                <ul class="pricing__wrapper--list">
+                                    <li class="pricing__wrapper--unit"><p class="paragraf paragraf--text-one pricing__wrapper--text-one">14$/MONTH</p></li>
+                                    <li class="pricing__wrapper--unit"><p class="paragraf paragraf--text-two paragraf--text-one pricing__wrapper--text-two">100 GB Available</p></li>
+                                    <li class="pricing__wrapper--unit"><p class="paragraf paragraf--text-two pricing__wrapper--text-two">Unlimited contacts</p></li>
+                                    <li class="pricing__wrapper--unit"><p class="paragraf paragraf--text-two pricing__wrapper--text-two">Unlimited Messages/mounth</p></li>
+                                    <li class="pricing__wrapper--unit"><p class="paragraf paragraf--text-two pricing__wrapper--text-two">Ads Free</p></li>
                                 </ul>                            
-                                <button class="pricing__item--button">Buy</button>
+                                <button class="button button--small pricing__wrapper--button">Buy</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="video">
-                <h2 class="video__title2">Video Projects</h2>
+            <section class="section video">
+                <h2 class="section-title video__title2">Video Projects</h2>
                 <div class="video__slider">
-                    <div class="video__item">
-                    <div class="video__item--img"><img src="image/video-image_3.png" alt="video-image_3"><div class="video__item--play"><img tabindex="0" src="image/play-icon.png" alt="play-icon"></div></div>
-                    <p class="video__item--title">Video title<time datetime="2019-08-05T09:10">9:10</time></p>
+                    <div class="video__slider--item">
+                    <div class="video__slider--img"><img src="assets/image/video-image_3.png" alt="video-image_3"><div class="video__slider--play"><img tabindex="0" src="assets/image/play-icon.png" alt="play-icon"></div></div>
+                    <p class="paragraf paragraf--title video__slider--title">Video title<time class="video__slider--time" datetime="2019-08-05T09:10">9:10</time></p>
                 </div>
-                <div class="video__item">
-                    <div class="video__item--img"><img src="image/video-image.png" alt="video-image"><div class="video__item--play"><img tabindex="0" src="image/play-icon.png" alt="play-icon"></div></div>
-                    <p class="video__item--title">Video title<time datetime="2019-08-05T09:10">9:10</time></p>
+                <div class="video__slider--item">
+                    <div class="video__slider--img"><img src="assets/image/video-image.png" alt="video-image"><div class="video__slider--play"><img tabindex="0" src="assets/image/play-icon.png" alt="play-icon"></div></div>
+                    <p class="paragraf paragraf--title video__slider--title">Video title<time class="video__slider--time" datetime="2019-08-05T09:10">9:10</time></p>
                 </div>
-                <div class="video__item">
-                    <div class="video__item--img"><img src="image/video-image_2.png" alt="video-image_2"><div class="video__item--play"><img tabindex="0" src="image/play-icon.png" alt="play-icon"></div></div>
-                    <p class="video__item--title">Video title<time datetime="2019-08-05T09:10">9:10</time></p>
+                <div class="video__slider--item">
+                    <div class="video__slider--img"><img src="assets/image/video-image_2.png" alt="video-image_2"><div class="video__slider--play"><img tabindex="0" src="assets/image/play-icon.png" alt="play-icon"></div></div>
+                    <p class="paragraf paragraf--title video__slider--title">Video title<time class="video__slider--time" datetime="2019-08-05T09:10">9:10</time></p>
                 </div>
                 </div>
             </section>
-            <section id="team" class="team">
-                <h2 class="team__title2">Zippy Team</h2>
+            <section id="team" class="section team">
+                <h2 class="section-title">Zippy Team</h2>
                 <div class="container">
                     <div class="team__people">
-                    <div class="team__item">
-                        <img src="image/image_8.png" alt="image_8">
-                        <div class="team__item--img">
-                            <div class="team__item--refer">
-                                <a href="#"><i class="fab fa-facebook-f fa-2x"></i></a>
-                                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
-                                <a href="#"><i class="fab fa-google-plus-g fa-2x"></i></a>
+                    <div class="team__people--item">
+                        <div class="card--img">
+                            <img class="team__people--img" src="assets/image/image_8.png" alt="image_8">
+                            <div class="team__people--background">
+                                <div class="team__people--info">
+                                    <a class="team__people--link" href="#"><i class="fab fa-facebook-f fa-2x team__people--icon"></i></a>
+                                    <a class="team__people--link" href="#"><i class="fab fa-twitter fa-2x team__people--icon"></i></a>
+                                    <a class="team__people--link" href="#"><i class="fab fa-google-plus-g fa-2x team__people--icon"></i></a>
+                                </div>
                             </div>
                         </div>
-                        <p class="team__item--title">Sara Johnson</p>
-                        <p class="team__item--text">Creative Head</p>
+                        <div class="card--info">
+                            <p class="paragraf paragraf--title team__people--title">Sara Johnson</p>
+                            <p class="paragraf paragraf--text-one team__people--text">Creative Head</p>
+                        </div>
                     </div>
-                    <div class="team__item">
-                        <img src="image/image_9.png" alt="image_9">
-                        <div class="team__item--img">
-                            <div class="team__item--refer">
-                                <a href="#"><i class="fab fa-facebook-f fa-2x"></i></a>
-                                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
-                                <a href="#"><i class="fab fa-google-plus-g fa-2x"></i></a>
+                    <div class="team__people--item">
+                        <img class="team__people--img" src="assets/image/image_9.png" alt="image_9">
+                        <div class="team__people--background">
+                            <div class="team__people--info">
+                                <a class="team__people--link" href="#"><i class="fab fa-facebook-f fa-2x team__people--icon"></i></a>
+                                <a class="team__people--link" href="#"><i class="fab fa-twitter fa-2x team__people--icon"></i></a>
+                                <a class="team__people--link" href="#"><i class="fab fa-google-plus-g fa-2x team__people--icon"></i></a>
                             </div>
                         </div>
-                        <p class="team__item--title">Matt Alex</p>
-                        <p class="team__item--text">Art Director</p>
+                        <div class="card--info">
+                            <p class="paragraf paragraf--title team__people--title">Matt Alex</p>
+                            <p class="paragraf paragraf--text-one team__people--text">Art Director</p>
+                        </div>
                     </div>
-                    <div class="team__item">
-                            <img src="image/image_12.png" alt="image_12">
-                        <div class="team__item--img">
-                            <div class="team__item--refer">
-                                <a href="#"><i class="fab fa-facebook-f fa-2x"></i></a>
-                                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
-                                <a href="#"><i class="fab fa-google-plus-g fa-2x"></i></a>
+                    <div class="team__people--item">
+                            <img class="team__people--img" src="assets/image/image_12.png" alt="image_12">
+                        <div class="team__people--background">
+                            <div class="team__people--info">
+                                <a class="team__people--link" href="#"><i class="fab fa-facebook-f fa-2x team__people--icon"></i></a>
+                                <a class="team__people--link" href="#"><i class="fab fa-twitter fa-2x team__people--icon"></i></a>
+                                <a class="team__people--link" href="#"><i class="fab fa-google-plus-g fa-2x team__people--icon"></i></a>
                             </div>
                         </div>
-                        <p class="team__item--title">Chris Philips</p>
-                        <p class="team__item--text">Senior Designer</p>
+                        <div class="card--info">
+                            <p class="paragraf paragraf--title team__people--title">Chris Philips</p>
+                            <p class="paragraf paragraf--text-one team__people--text">Senior Designer</p>
+                        </div>
                     </div>
-                    <div class="team__item">
-                           <img src="image/image_10.png" alt="image_10">
-                        <div class="team__item--img">
-                            <div class="team__item--refer">
-                                <a href="#"><i class="fab fa-facebook-f fa-2x"></i></a>
-                                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
-                                <a href="#"><i class="fab fa-google-plus-g fa-2x"></i></a>
+                    <div class="team__people--item">
+                           <img class="team__people--img" src="assets/image/image_10.png" alt="image_10">
+                        <div class="team__people--background">
+                            <div class="team__people--info">
+                                <a class="team__people--link" href="#"><i class="fab fa-facebook-f fa-2x team__people--icon"></i></a>
+                                <a class="team__people--link" href="#"><i class="fab fa-twitter fa-2x team__people--icon"></i></a>
+                                <a class="team__people--link" href="#"><i class="fab fa-google-plus-g fa-2x team__people--icon"></i></a>
                             </div>
                         </div>
-                        <p class="team__item--title">Jimmy Smith</p>
-                        <p class="team__item--text">Marketing Manager</p>
+                        <div class="card--info">
+                            <p class="paragraf paragraf--title team__people--title">Jimmy Smith</p>
+                            <p class="paragraf paragraf--text-one team__people--text">Marketing Manager</p>
+                        </div>
                     </div>
-                    <div class="team__item">
-                            <img src="image/image_11.png" alt="image_11">
-                        <div class="team__item--img">
-                            <div class="team__item--refer">
-                                <a href="#"><i class="fab fa-facebook-f fa-2x"></i></a>
-                                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
-                                <a href="#"><i class="fab fa-google-plus-g fa-2x"></i></a>
+                    <div class="team__people--item">
+                            <img class="team__people--img" src="assets/image/image_11.png" alt="image_11">
+                        <div class="team__people--background">
+                            <div class="team__people--info">
+                                <a class="team__people--link" href="#"><i class="fab fa-facebook-f fa-2x team__people--icon"></i></a>
+                                <a class="team__people--link" href="#"><i class="fab fa-twitter fa-2x team__people--icon"></i></a>
+                                <a class="team__people--link" href="#"><i class="fab fa-google-plus-g fa-2x team__people--icon"></i></a>
                             </div>
                         </div>
-                        <p class="team__item--title">Aliza</p>
-                        <p class="team__item--text">SEO MONSTER</p>
+                        <div class="card--info">
+                            <p class="paragraf paragraf--title team__people--title">Aliza</p>
+                            <p class="paragraf paragraf--text-one team__people--text">SEO MONSTER</p>
+                        </div>
                     </div>
-                    <div class="team__item">
-                            <img src="image/image_13.png" alt="image_13">
-                        <div class="team__item--img">
-                            <div class="team__item--refer">
-                                <a href="#"><i class="fab fa-facebook-f fa-2x"></i></a>
-                                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
-                                <a href="#"><i class="fab fa-google-plus-g fa-2x"></i></a>
+                    <div class="team__people--item">
+                            <img class="team__people--img" src="assets/image/image_13.png" alt="image_13">
+                        <div class="team__people--background">
+                            <div class="team__people--info">
+                                <a class="team__people--link" href="#"><i class="fab fa-facebook-f fa-2x team__people--icon"></i></a>
+                                <a class="team__people--link" href="#"><i class="fab fa-twitter fa-2x team__people--icon"></i></a>
+                                <a class="team__people--link" href="#"><i class="fab fa-google-plus-g fa-2x team__people--icon"></i></a>
                             </div>
                         </div>
-                        <p class="team__item--title">Celen John</p>
-                        <p class="team__item--text">Senior Designer</p>
+                        <div class="card--info">
+                            <p class="paragraf paragraf--title team__people--title">Celen John</p>
+                            <p class="paragraf paragraf--text-one team__people--text">Senior Designer</p>
+                        </div>
                     </div>
                 </div>
                 </div>
             </section>
-            <section id="life" class="life">
-                <h2 class="life__title2">Life in Zippy</h2>
+            <section id="life" class="section life">
+                <h2 class="section-title life__title2">Life in Zippy</h2>
                 <div class="container">
-                    <img class="life__main-image" src="image/image_3.png" alt="image_3">
-                    <div class="item--display">
-                    <button class="life__left-arrow"><img src="image/left-arrow.png" alt="left-arrow"></button>
                     <div class="life__slider">
-                            <img src="image/image_18.png" alt="image_18">
-                            <img src="image/image_20.png" alt="image_20">
-                            <img src="image/image_19.png" alt="image_19">
-                            <img src="image/image_17.png" alt="image_17">
-                            <img src="image/image_21.png" alt="image_21">
+                        <img class="life__slider--main-image" src="assets/image/image_3.png" alt="image_3">
+                        <div class="life__slider--item">
+                            <button class="life__slider--left-arrow"><img src="assets/image/left-arrow.png" alt="left-arrow"></button>
+                        <div class="life__slider--image">
+                            <img class="life__slider--min-image" src="assets/image/image_18.png" alt="image_18">
+                            <img class="life__slider--min-image" src="assets/image/image_20.png" alt="image_20">
+                            <img class="life__slider--min-image" src="assets/image/image_19.png" alt="image_19">
+                            <img class="life__slider--min-image" src="assets/image/image_17.png" alt="image_17">
+                            <img class="life__slider--min-image" src="assets/image/image_21.png" alt="image_21">
                     </div>
-                    <button class="life__right-arrow"><img src="image/right-arrow.png" alt="right-arrow"></button>
+                    <button class="life__slider--right-arrow"><img src="assets/image/right-arrow.png" alt="right-arrow"></button>
                 </div>
                 </div>
-            </section>
-            <section class="newsletter">
-                <div class="container">
-                <h2 class="newsletter__title2">Newsletter Signup</h2>
-                <form class="newsletter__input">
-                    <input type="email" name="email" placeholder="abc@example.com">
-                    <button class="newsletter__button" type="submit">Sign up</button>
-                </form>
                 </div>
             </section>
-            <section id="blog" class="blog">
-                <h2 class="blog__title2">Blog</h2>
+            <section class="section newsletter">
+                <h2 class="section-title newsletter__title2">Newsletter Signup</h2>
                 <div class="container">
-                    <div class="blog__item" tabindex="0">
-                        <img src="image/image_16.png" alt="image_16">
-                        <p class="blog__item--title">Lorem ipsum dolor sit amet</p>
-                        <p class="blog__item--text-one"><time datetime="2015-01-15">15 Jan, 2015</time></p>
-                        <p class="blog__item--text-two">Lorem ipsum dolor sit anet, con&shy;sectetur adipiscing elit. Pellen&shy;tesque vel odio vel fellis placerat pharetra ut vitae felis.</p>
-                        <button class="blog__item--button">Read more</button>
+                    <div class="newsletter__wrapper">
+                        <form class="newsletter__wrapper--form">
+                            <input class="newsletter__wrapper--input" type="email" name="email" placeholder="abc@example.com">
+                            <button class="button button--big newsletter__wrapper--button" type="submit">Sign up</button>
+                        </form>
                     </div>
-                    <div class="blog__item" tabindex="0">
-                        <img src="image/image_14.png" alt="image_14">
-                        <p class="blog__item--title">Lorem ipsum dolor sit amet</p>
-                        <p class="blog__item--text-one"><time datetime="2015-01-15">15 Jan, 2015</time></p>
-                        <p class="blog__item--text-two">Lorem ipsum dolor sit anet, con&shy;sectetur adipiscing elit. Pellen&shy;tesque vel odio vel fellis placerat pharetra ut vitae felis.</p>
-                        <button class="blog__item--button">Read more</button>
-                    </div>
-                    <div class="blog__item" tabindex="0">
-                        <img src="image/image_15.png" alt="image_15">
-                        <p class="blog__item--title">Lorem ipsum dolor sit amet</p>
-                        <p class="blog__item--text-one"><time datetime="2015-01-15">15 Jan, 2015</time></p>
-                        <p class="blog__item--text-two">Lorem ipsum dolor sit anet, con&shy;sectetur adipiscing elit. Pellen&shy;tesque vel odio vel fellis placerat pharetra ut vitae felis.</p>
-                        <button class="blog__item--button">Read more</button>
+                </div>
+            </section>
+            <section id="blog" class="section blog">
+                <h2 class="section-title">Blog</h2>
+                <div class="container">
+                    <div class="block__wrapper">
+                        <div class="block__wrapper--item">
+                            <div class="block__wrapper--container" tabindex="0">
+                                <div class="card--img"><img src="assets/image/image_16.png" alt="image_16"></div>
+                                <div class="card--info">
+                                    <p class="paragraf paragraf--title block__wrapper--title">Lorem ipsum dolor sit amet</p>
+                                    <p class="paragraf paragraf--text-one block__wrapper--text-one"><time datetime="2015-01-15">15 Jan, 2015</time></p>
+                                    <p class="paragraf paragraf--text-two block__wrapper--text-two">Lorem ipsum dolor sit anet, con&shy;sectetur adipiscing elit. Pellen&shy;tesque vel odio vel fellis placerat pharetra ut vitae felis.</p>
+                                    <button class="button button--normal block__wrapper--button">Read more</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block__wrapper--item">
+                            <div class="block__wrapper--container" tabindex="0">
+                                <div class="card--img"><img src="assets/image/image_14.png" alt="image_14"></div>
+                                <div class="card--info">
+                                    <p class="paragraf paragraf--title block__wrapper--title">Lorem ipsum dolor sit amet</p>
+                                    <p class="paragraf paragraf--text-one block__wrapper--text-one"><time datetime="2015-01-15">15 Jan, 2015</time></p>
+                                    <p class="paragraf paragraf--text-two block__wrapper--text-two">Lorem ipsum dolor sit anet, con&shy;sectetur adipiscing elit. Pellen&shy;tesque vel odio vel fellis placerat pharetra ut vitae felis.</p>
+                                    <button class="button button--normal block__wrapper--button">Read more</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block__wrapper--item">
+                            <div class="block__wrapper--container" tabindex="0">
+                                <div class="card--img"><img src="assets/image/image_15.png" alt="image_15"></div>
+                                <div class="card--info">
+                                    <p class="paragraf paragraf--title block__wrapper--title">Lorem ipsum dolor sit amet</p>
+                                    <p class="paragraf paragraf--text-one block__wrapper--text-one"><time datetime="2015-01-15">15 Jan, 2015</time></p>
+                                    <p class="paragraf paragraf--text-two block__wrapper--text-two">Lorem ipsum dolor sit anet, con&shy;sectetur adipiscing elit. Pellen&shy;tesque vel odio vel fellis placerat pharetra ut vitae felis.</p>
+                                    <button class="button button--normal block__wrapper--button">Read more</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
             <section id="contact" class="contact">
                 <div class="contact__map">
-                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A07f4c8a2188ec81b131cb1cfd40897702e7ab540e1841513cd8af2598dea11a1&amp;width=692&amp;height=652&amp;lang=ru_RU&amp;scroll=true"></script>
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A07f4c8a2188ec81b131cb1cfd40897702e7ab540e1841513cd8af2598dea11a1&amp;lang=ru_RU&amp;scroll=true"></script>
                 </div>
                 <div class="contact__info">
+                    <div class="contact__info--container">
                     <h2 class="contact__title2">Contact</h2>
-                    <form class="contact__info--form">
-                        <label for="name">Name</label>
-                        <input name="name" id="name" type="text">
-                        <label for="email">Email address</label>
-                        <input name="email" id="email" type="email">
-                        <label for="subject">Subject</label>
-                        <input name="subject" id="subject" type="text">
-                        <label for="message">Message</label>
-                        <textarea rows="5" cols="45" name="message" id="message"></textarea>
-                        <button class="contact__button" type="submit">Send</button>
-                    </form>
+                    <div class="contact__wrapper">
+                        <form class="contact__wrapper--form">
+                            <label class="contact__wrapper--label" for="name">Name</label>
+                            <input class="contact__wrapper--input" name="name" id="name" type="text">
+                            <label class="contact__wrapper--label" for="email">Email address</label>
+                            <input class="contact__wrapper--input" name="email" id="email" type="email">
+                            <label class="contact__wrapper--label" for="subject">Subject</label>
+                            <input class="contact__wrapper--input" name="subject" id="subject" type="text">
+                            <label class="contact__wrapper--label" for="message">Message</label>
+                            <textarea class="contact__wrapper--textarea" rows="5" cols="45" name="message" id="message"></textarea>
+                            <button class="button button--extra-largest contact__wrapper--button" type="submit">Send</button>
+                        </form>
+                    </div>
+                    </div>
                 </div>
             </section>
         </main>
         <footer class="footer">
             <div class="container">
-                <div class="footer__item">
-                    <p class="footer__item--title">Office address</p>
-                    <address><ul class="footer__item--text-two"><li>Lorem Ipsum dolor, 234</li><li>1200 Consecture</li><li>Adipsching</li></ul></address>
-                </div>
-                <div class="footer__item">
-                    <p class="footer__item--title">Follow us</p>
-                        <ul class="footer__item--icon">
-                        <li><a href="#"><i class="fab fa-behance fa-lg"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                        <li><a href="#"><i class="fab fa-tumblr"></i></a></li>
-                        </ul> 
-                </div>
-                <div class="footer__item">
-                    <p class="footer__item--title">Contact us</p>
-                    <ul class="footer__item--text-two">
-                        <li><a href="tel:+123456789">+ 123 456 789</a></li>
-                        <li><a href="skype::zippy@skype">zippy@skype</a></li>
-                        <li><a href="mailto:enquiry@zippy.com">enquiry@zippy.com</a></li>
-                    </ul>
+                <div class="footer__wrapper">
+                    <div class="footer__wrapper--item">
+                        <p class="paragraf paragraf--title footer__wrapper--title">Office address</p>
+                        <address>
+                            <ul class="footer__wrapper--list">
+                                <li class="footer__wrapper--unit"><p class="paragraf--text-two footer__wrapper--text-two">Lorem Ipsum dolor, 234</p></li>
+                                <li class="footer__wrapper--unit"><p class="paragraf--text-two footer__wrapper--text-two">1200 Consecture</p></li>
+                                <li class="footer__wrapper--unit"><p class="paragraf--text-two footer__wrapper--text-two">Adipsching</p></li>
+                            </ul>
+                        </address>
+                    </div>
+                    <div class="footer__wrapper--item">
+                        <p class="paragraf paragraf--title footer__wrapper--title">Follow us</p>
+                            <ul class="footer__wrapper--list footer__wrapper--container">
+                            <li class="footer__wrapper--unit"><a class="footer__wrapper--link" href="#"><i class="fab fa-behance fa-lg footer__wrapper--icon"></i></a></li>
+                            <li class="footer__wrapper--unit"><a class="footer__wrapper--link" href="#"><i class="fab fa-twitter footer__wrapper--icon"></i></a></li>
+                            <li class="footer__wrapper--unit"><a class="footer__wrapper--link" href="#"><i class="fab fa-linkedin-in footer__wrapper--icon"></i></a></li>
+                            <li class="footer__wrapper--unit"><a class="footer__wrapper--link" href="#"><i class="fab fa-facebook-f footer__wrapper--icon"></i></a></li>
+                            <li class="footer__wrapper--unit"><a class="footer__wrapper--link" href="#"><i class="fab fa-google-plus-g footer__wrapper--icon"></i></a></li>
+                            <li class="footer__wrapper--unit"><a class="footer__wrapper--link" href="#"><i class="fab fa-tumblr footer__wrapper--icon"></i></a></li>
+                            </ul> 
+                    </div>
+                    <div class="footer__wrapper--item">
+                        <p class="paragraf paragraf--title footer__wrapper--title">Contact us</p>
+                        <ul class="footer__wrapper--list paragraf--text-two footer__wrapper--text-two">
+                            <li class="footer__wrapper--unit"><a class="footer__wrapper--link" href="tel:+123456789">+ 123 456 789</a></li>
+                            <li class="footer__wrapper--unit"><a class="footer__wrapper--link" href="skype::zippy@skype">zippy@skype</a></li>
+                            <li class="footer__wrapper--unit"><a class="footer__wrapper--link" href="mailto:enquiry@zippy.com">enquiry@zippy.com</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </footer>
