@@ -1,0 +1,37 @@
+.newsletter{
+    background-image: url(assets/image/image_2.png);
+
+    &__title2{
+        color: #ffffff;
+    }
+}
+
+.newsletter__wrapper{
+        padding: 30px 0 110px 0;
+        margin: auto;
+
+    &--form{
+        height: 55px;
+        border: none;
+        border-radius: 2.9px;
+        background-color: #fefefe;
+        margin: 0 auto;
+    }
+
+    &--input{
+        border: none;
+        height: inherit;
+        font-family: Montserrat;
+        padding: 0 0 0 15px;
+        font-size: 19px;
+        line-height: 2.13;
+
+        &::placeholder{
+            color: #d8d8d8;
+        }
+    }
+    
+    &--button{
+        float: right;
+    }
+}
