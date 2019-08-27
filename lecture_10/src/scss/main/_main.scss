@@ -1,0 +1,43 @@
+*{
+    font-family: $font-stack;
+}
+body{
+    max-width: $width-body;
+    margin: auto;
+}
+.container{
+    width: $width-container;
+    margin: auto;
+}
+.section{
+    padding: 75px 0 0 0;
+}
+.card--img {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.card--info{
+    text-align: center;
+}
+.paragraf {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: $text-transform;
+    padding: 5px;
+    &:hover{
+        text-decoration: none; 
+    }
+    &:focus{
+        outline-color: $bgcolor;
+    }
+}
+input:focus, textarea:focus  {
+    outline-color: orange;
+}
+

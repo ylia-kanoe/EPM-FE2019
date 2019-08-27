@@ -1,0 +1,55 @@
+.video{
+    background-color: $color-two;
+    overflow: hidden;
+
+    &__title2{
+        color: #fefefe;
+    }
+}
+.video__slider{
+    padding: 45px 0 100px;
+
+    .row{
+        width: 2000px;
+    }
+
+    &--item {
+        margin-right: 37px;
+
+        &:first-child {
+            margin-left: -375px;
+        }
+
+        &:last-child{
+            width: 630px;
+        }
+    }
+
+    &--img{
+        position: relative;
+    }
+
+    &--play{
+        width: 95%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        display: flex;
+        justify-content: center;
+
+        &:hover{
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+    }
+
+    &--title{
+        color: #fefefe;
+        font-size: 10.5px;
+        text-align: left;
+        padding: 8px 0;
+    } 
+    
+    &--time{
+        float: right;
+    }
+}
