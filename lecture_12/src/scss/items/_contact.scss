@@ -1,0 +1,46 @@
+.contact{
+    background-color: $bgcolor;   
+   
+    &--title2{
+        text-align: left;
+    }
+}
+.contact__map{
+    padding: 0;
+}
+.contact__info{
+
+    &--container {
+        padding: 40px 15px 45px 15px;
+    }
+}
+.contact__wrapper{
+    
+    padding-top: 25px;
+
+    &--label{
+        display: block;
+        font-size: 10.5px;
+        font-weight:  800;
+        text-transform: $text-transform;
+        color: #323232;
+        padding-bottom: 6px;
+    }
+    &--input, &--textarea{        
+        border: none;
+        margin-bottom: 23px;
+        padding: 10px;
+        font-size: 19px;
+        width: inherit;
+        
+    }
+    &--textarea{    
+        resize: none;
+    }
+ 
+    &--button{
+        display: block;
+        background-color: $color-two;
+        color:#fefefe;  
+    }
+}

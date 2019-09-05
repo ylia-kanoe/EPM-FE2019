@@ -1,0 +1,40 @@
+/* Стилизация заголовков */
+h1, h2{
+    font-size: 44px;
+    font-weight: bold;
+    margin: 0;   
+}
+h3{
+    font-size: 40.5px;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* Стилизация текста */
+.section-title{
+    color: #040405;
+    text-align: center;
+}
+.paragraf--title{
+    font-size: 14.5px;
+    font-weight: bold;
+    line-height: 2.79;
+    text-align: center;
+    text-transform: $text-transform;
+}
+.paragraf--text-one{
+    opacity: 0.5;
+    font-family: $font-text-one;
+    font-size: 13.5px;
+    line-height: 1.74;
+    text-align: center;
+    color: rgba(4, 4, 5, 0.5);
+}
+.paragraf--text-two{
+    font-family: $font-text-one;
+    font-size: 10.5px;
+    line-height: 1.9;
+    text-align: center;
+    color: #040405;  
+    margin:0;
+}
