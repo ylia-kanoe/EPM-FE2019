@@ -1,0 +1,49 @@
+/* Шапка */
+.header{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    padding: 25px 0 10px 0px;
+}
+
+.header__logo{  
+
+    &--refer{
+        color: #ffffff;
+        font-size: 29.5px;
+        letter-spacing: -1.95px;
+        display: inline-block;
+        padding: 5px 10px 5px 10px;
+    }
+}
+
+.header__menu{
+
+    &--nav{
+        float: right;
+        padding: 20px 0 0 0;
+    }
+    &--list{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    &--unit{
+        display: inline-block;
+    }
+
+    &--refer{
+        color: #ffffff;
+        font-size: 10.5px;
+        text-align: left;
+        letter-spacing: -0.1px;
+        padding: 10px 15px 10px 15px;
+
+        &.active{
+        color: $bgcolor;
+        }
+    }
+}
