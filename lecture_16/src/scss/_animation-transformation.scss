@@ -1,0 +1,185 @@
+/* Трансформация на логотипе */
+.header__logo--refer{
+    display: inline-block;
+
+    &:hover{
+        animation: blink 0.4s infinite alternate;
+        transform-origin: center;
+
+        @keyframes blink {
+            0% {
+                color: $color-one;
+            }  
+            100% {
+                color: $color-two;
+            }
+        } 
+    }
+}
+/* Трансформация в панели навигации */
+.header__menu--refer{
+    display: inline-block;
+    transition: 0.4s;
+    
+    &:hover{
+        color: $bgcolor;
+        transform: scale(1.4);
+    }
+}
+
+/* Трансформация навигации по слайдам */
+.banner__circles--entity:hover {
+    transform: scale(1.5);
+    opacity: 1;
+}
+
+/* Анимация баннера */
+.banner__info--title{
+    animation: moving-title 4s  alternate;
+    transform-origin: center;
+        
+    @keyframes moving-title {
+        0% {
+            transform: translate(200px);  
+            opacity: 0;
+        }
+        100% {
+            transform: translate(0px);
+            transition: all 4s ease;  
+            opacity: 1;
+        }
+    }
+}
+
+.banner__info--text{
+    animation: moving-text 4s  alternate;
+    transform-origin: center;
+        
+    @keyframes moving-text {
+        0% {
+            transform: translate(-70px);
+            opacity: 0;
+        }
+        100% {
+            transform: translate(0px);
+            transition: all 3s ease;   
+            opacity: 1;
+        }
+    }
+}
+
+.banner__info--button{
+    animation: moving-button 4s  alternate;
+    transform-origin: center;
+        
+    @keyframes moving-button {
+        0% {
+            transform: translateY(50px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0px); 
+            transition: transform 2s ease, opacity 2s ease, background-color 0.4s;
+            opacity: 1;
+        }
+    }
+}
+
+/* Анимация pricing (оборот на 360 по горизонтали) */
+.pricing__wrapper--container{
+    transition: 1.2s;
+}
+
+.pricing__wrapper--item:hover .pricing__wrapper--container{
+    transform: rotateY(360deg) scale(1.5);
+}
+
+
+/* Анимация видео блока */
+.video__slider--play{
+    transition: 0.4s;
+    img{
+        align-self: center;
+
+        &:focus{
+            animation: beat 0.65s infinite alternate;
+            transform-origin: center;
+
+            @keyframes beat {
+                0% {
+                    transform: scale(1);
+                }
+                50% {
+                    transform: scale(1.2);
+                }    
+                100% {
+                    transform: scale(1);
+                }
+            }
+        }
+    }
+}
+
+/* Анимация блок team (при наведении на блок, при наведении на иконку) */
+.team__people--background{
+    transition: 0.4s;
+    transform:scale(0);
+    transform-origin: 50% 100%;
+}
+
+.team__people--item:hover .team__people--background{
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+    
+    & .team__people--link{
+
+        .team__people--icon{
+            transition: 1.5s;
+            display: inline-block;
+        }
+
+        &:hover .team__people--icon{
+            color: $color-one;
+            transform: rotateX(360deg);
+        }
+    }
+}
+/* Трансформация blog в центр */
+.block__wrapper--container{
+    transition: 0.2s;
+
+    &:focus{
+        transform: scale(1.2);
+        background-color: #fff;
+        z-index: 11;
+        width: inherit;
+        position: absolute;         
+    }
+}
+
+.block__wrapper--item:first-child .block__wrapper--container:focus{
+    transform: translateX(100%) scale(1.2);
+}
+.block__wrapper--item:last-child .block__wrapper--container:focus{
+    transform: translateX(-100%) scale(1.2);
+}
+
+/* Трансформация в подвале */
+.footer__wrapper--container .footer__wrapper--unit{
+    width: 30%;
+    margin: 10px 0 4px;
+
+    .footer__wrapper--link{
+        color: #000;
+
+        .footer__wrapper--icon{
+            transition: 1.5s; 
+    }
+
+        &:hover .footer__wrapper--icon{
+            color: $color-two;
+            transform: rotateX(360deg);
+        }
+    }
+}
