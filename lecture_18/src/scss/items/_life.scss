@@ -1,0 +1,38 @@
+.life{
+    background-color:#efefef;
+
+    .container {
+        width: $width-container - 20px;
+        margin: auto;
+    }
+}
+
+.life__slider{
+    padding: 35px 0 105px 0;
+
+    &--main-image{
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    &--left-arrow, &--right-arrow{
+        background-color: #2a2a2a;
+        @include sizes(31px,69px);
+        display: inline-block;
+        vertical-align: top;
+        transition: 0.4s;
+        cursor: pointer;
+        border: none;
+        &:hover{
+            background-color: $bgcolor-hover;
+        }
+    }
+    &--image{
+        display: flex;
+    }
+    &--min-image{
+        padding: 0 5.5px;
+        width: 20%;
+    
+    }
+}
