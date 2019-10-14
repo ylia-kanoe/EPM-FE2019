@@ -1,0 +1,18 @@
+@mixin items($persent) {
+    display: inline-block;
+    width: $persent;
+    vertical-align: top;
+}
+
+@mixin sizes($width,$heigth) {
+    width: $width;
+    height: $heigth;
+}
+
+@mixin items-flex($flex-direction, $justify-content, $align-items) {
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    flex-wrap: wrap;
+}
