@@ -1,0 +1,11 @@
+<div class="pole">
+    <div class="axisX">
+        <div class="numberx" *ngFor="let x of massive">{{x}}</div>
+    </div>
+    <div class="y" *ngFor="let y of massive">
+        <div class="numbery">{{y}}</div>
+        <div class="x" *ngFor="let x of massive">
+            <app-cell (click)="test(x,y)"></app-cell>
+        </div>
+    </div>
+</div>
