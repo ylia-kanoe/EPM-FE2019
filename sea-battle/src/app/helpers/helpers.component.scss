@@ -1,0 +1,25 @@
+.helpers {
+    margin: 30px auto;
+    text-align: center;
+    width: 50%;
+    line-height: 1.4;
+}
+.helpers-button {
+    display: block;
+    margin: 0 auto;
+    border: none;
+    background: #736f6f;
+    padding: 10px 20px;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.helpers-button:hover{
+    background: #bfbfbf;
+    color: #000;
+}
+.helpers-button:focus{
+    outline: none;
+}
