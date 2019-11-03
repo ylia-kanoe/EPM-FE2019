@@ -11,19 +11,17 @@ import { timer } from 'rxjs';
 })
 export class HelpersComponent implements OnInit {
   public helpers;
-  public number;
-
+  private number;
+ 
   constructor(private helpersService: HelpersService) {
 
   }
   ngOnInit() {
-
-    timer(0, 3000).subscribe(fun => {
-      this.number = Math.floor(Math.random() * Math.floor(12));;
+    timer(0, 3000).subscribe(() => {
       this.helpersService.getHelpers().subscribe(helpers => {
-        return this.helpers = String(helpers[this.number].text);
+        this.number = Math.floor(Math.random() * Math.floor(helpers.length));
+        return this.helpers = helpers[this.number].text;
       });
-
     });
 
   }

@@ -10,6 +10,7 @@ import { InfoService } from './info.service';
 export class BattlefieldComponent implements OnInit {
   public infoBattle;
   public massive: Array<number>;
+  public massiveAlf: Array<String> = ['A', 'B', 'C', 'D','E', 'F', 'G', 'H', 'I', 'J' ];
 
   constructor(private infoService: InfoService) {
     this.infoService.getInfo().subscribe(infoBattle => {

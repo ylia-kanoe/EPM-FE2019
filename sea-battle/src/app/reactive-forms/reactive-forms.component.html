@@ -1,0 +1,15 @@
+<fieldset [formGroup]='fullNameControl'>
+
+    <label for="firstName">Имя: </label>
+    <input type="text" id="firstName" formControlName="firstName" placeholder="Юля" required />
+    <div class="errors" *ngIf="firstName.errors?.pattern">Имя введено не верно</div>
+    <label for="email">E-mail: </label>
+    <input type="email" id="email" formControlName="email" placeholder="mail@gmail.com" />
+    <div class="errors" *ngIf="email.errors?.pattern">E-mail введен не верно</div>
+    <label for="number">Телефон: </label>
+    <input type="tel" id="number" formControlName="number" placeholder="9998887766" />
+    <div class="errors" *ngIf="number.errors?.pattern">Телефон введен не верно</div>
+    <button class="reactive-button" (click)="send()">Отправить</button>
+    <div [class]="formSubmittedClass">{{formSubmitted}}</div>
+
+</fieldset>
