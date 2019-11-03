@@ -1,0 +1,49 @@
+.template-form {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    top: 20%;
+    padding: 30px;
+    border-radius: 6px;
+    border: 1px solid #000;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+label {
+    padding: 15px 0 5px;
+}
+.template-button {
+    display: block;
+    border: none;
+    background: #736f6f;
+    padding: 10px 20px;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 20px auto;
+}
+.template-button:hover{
+    background: #bfbfbf;
+    color: #000;
+}
+.template-button:focus, input:focus{
+    outline: none;
+}
+.errors, .formSubmittedNo{
+    color: red;
+    text-align: center;
+}
+.formSubmittedYes{
+    color: green;
+    text-align: center;
+}
+input {
+    border: 1px solid #000;
+    padding: 5px 10px;
+    border-radius: 5px;
+}

@@ -9,18 +9,26 @@ import { BattlefieldService } from './battlefield.service';
 import { HelpersComponent } from './helpers/helpers.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HelpersService } from './helpers/helpers.service';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsComponent } from './reactive-forms/reactive-forms.component';
+import { TemplateDrivenComponent } from './template-driven/template-driven.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     CellComponent,
     BattlefieldComponent,
-    HelpersComponent
+    HelpersComponent,
+    ReactiveFormsComponent,
+    TemplateDrivenComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [BattlefieldService, HelpersService],
   bootstrap: [AppComponent]

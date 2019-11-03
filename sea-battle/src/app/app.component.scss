@@ -6,3 +6,22 @@
     margin: auto;
     text-align: center;
 }
+.button-form {
+    display: block;
+    border: none;
+    background: #736f6f;
+    padding: 10px 20px;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+  
+}
+.button-form:hover{
+    background: #bfbfbf;
+    color: #000;
+}
+.button-form:focus{
+    outline: none;
+}

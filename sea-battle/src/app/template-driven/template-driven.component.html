@@ -1,0 +1,21 @@
+<div class="template-form">
+    <div class="form-group">
+        <label>Имя:</label>
+        <input name="name" [(ngModel)]="name" #registrationName="ngModel" placeholder="Юля" required/>
+
+        <label>E-mail:</label>
+        <input name="email" [(ngModel)]="email" #registrationEmail="ngModel" placeholder="mail@gmail.com"/>
+
+        <label>Телефон:</label>
+        <input name="number" [(ngModel)]="number" #registrationNumber="ngModel" placeholder="9998887766"/>
+
+        <button class="template-button" (click)="send(registrationName, registrationEmail, registrationNumber)">
+            Отправить
+        </button>
+    </div>
+    <div>
+        <p>{{registrationName.name}} : {{registrationName.model}}</p>
+        <p>{{registrationEmail.name}} : {{registrationEmail.model}}</p>
+        <p>{{registrationNumber.name}} : {{registrationNumber.model}}</p>
+    </div>
+</div>
